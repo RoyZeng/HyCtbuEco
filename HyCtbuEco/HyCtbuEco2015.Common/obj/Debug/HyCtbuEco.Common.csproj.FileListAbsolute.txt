@@ -1,10 +1,6 @@
-E:\项目\经济数据分析\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyCtbuEco.Common.csprojResolveAssemblyReference.cache
-E:\项目\经济数据分析\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyXiaoMian2015.Common.dll
-E:\项目\经济数据分析\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyXiaoMian2015.Common.pdb
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\HyXiaoMian2015.Common.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\HyXiaoMian2015.Common.pdb
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\Aspose.BarCode.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\log4net.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyCtbuEco.Common.csprojResolveAssemblyReference.cache
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyXiaoMian2015.Common.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyXiaoMian2015.Common.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\HyCtbuEco2015.Common.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\HyCtbuEco2015.Common.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\Aspose.BarCode.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Common\bin\Debug\log4net.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyCtbuEco2015.Common.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Common\obj\Debug\HyCtbuEco2015.Common.pdb

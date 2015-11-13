@@ -7,8 +7,8 @@
     <ProjectGuid>{DFD159A2-A085-4E88-8848-A74B2F31293B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HyXiaoMian2015.Server</RootNamespace>
-    <AssemblyName>HyXiaoMian2015.Server</AssemblyName>
+    <RootNamespace>HyCtbuEco2015.Server</RootNamespace>
+    <AssemblyName>HyCtbuEco2015.Server</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

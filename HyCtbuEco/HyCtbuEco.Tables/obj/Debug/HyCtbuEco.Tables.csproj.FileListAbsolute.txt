@@ -6,3 +6,11 @@ C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyXiaoMian2015.Entitie
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco.Tables.csprojResolveAssemblyReference.cache
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco.Tables.dll
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco.Tables.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyCtbuEco2015.Tables.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyCtbuEco2015.Tables.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyCtbuEco2015.Entities.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\TmsDapper.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyCtbuEco2015.Entities.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco.Tables.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco2015.Tables.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco2015.Tables.pdb

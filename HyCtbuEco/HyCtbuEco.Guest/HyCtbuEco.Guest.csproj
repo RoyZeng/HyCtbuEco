@@ -7,8 +7,8 @@
     <ProjectGuid>{8A8C9C18-5E67-4C7D-ACA5-A74048BA6B8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HyCtbuEco.Guest</RootNamespace>
-    <AssemblyName>HyCtbuEco.Guest</AssemblyName>
+    <RootNamespace>HyCtbuEco2015.Guest</RootNamespace>
+    <AssemblyName>HyCtbuEco2015.Guest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

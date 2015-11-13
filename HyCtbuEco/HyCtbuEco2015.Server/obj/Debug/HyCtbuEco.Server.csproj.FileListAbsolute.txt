@@ -9,3 +9,11 @@ C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyXiaoMian2015.Ent
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyCtbuEco.Server.csprojResolveAssemblyReference.cache
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyXiaoMian2015.Server.dll
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyXiaoMian2015.Server.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyCtbuEco2015.Server.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyCtbuEco2015.Server.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyCtbuEco2015.Entities.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\TmsDapper.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyCtbuEco2015.Entities.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyCtbuEco.Server.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyCtbuEco2015.Server.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyCtbuEco2015.Server.pdb

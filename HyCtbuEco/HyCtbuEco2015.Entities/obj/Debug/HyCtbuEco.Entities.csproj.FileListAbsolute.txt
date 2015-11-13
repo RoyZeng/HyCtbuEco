@@ -23,3 +23,8 @@ C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Entities\bin\Debug\HyXiaoMian2015.E
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Entities\bin\Debug\TmsDapper.dll
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Entities\obj\Debug\HyXiaoMian2015.Entities.dll
 C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Entities\obj\Debug\HyXiaoMian2015.Entities.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Entities\bin\Debug\HyCtbuEco2015.Entities.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Entities\bin\Debug\HyCtbuEco2015.Entities.pdb
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Entities\bin\Debug\TmsDapper.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Entities\obj\Debug\HyCtbuEco2015.Entities.dll
+C:\Users\Joe\Documents\GitHub\HyCtbuEco\HyCtbuEco\HyCtbuEco2015.Entities\obj\Debug\HyCtbuEco2015.Entities.pdb

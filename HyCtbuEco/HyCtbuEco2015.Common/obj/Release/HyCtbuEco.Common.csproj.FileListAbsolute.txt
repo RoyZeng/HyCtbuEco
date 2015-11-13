@@ -1,7 +1,0 @@
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Release\HyXiaoMian2015.Common.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Release\HyXiaoMian2015.Common.pdb
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Release\Aspose.BarCode.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\bin\Release\log4net.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\obj\Release\HyCtbuEco.Common.csprojResolveAssemblyReference.cache
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\obj\Release\HyXiaoMian2015.Common.dll
-C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Common\obj\Release\HyXiaoMian2015.Common.pdb

@@ -1,7 +1,0 @@
-D:\MyWeb2005\HyCtbuEco\HyXiaoMian2015.Common\bin\Debug\HyXiaoMian2015.Common.dll
-D:\MyWeb2005\HyCtbuEco\HyXiaoMian2015.Common\bin\Debug\HyXiaoMian2015.Common.pdb
-D:\MyWeb2005\HyCtbuEco\HyXiaoMian2015.Common\bin\Debug\Aspose.BarCode.dll
-D:\MyWeb2005\HyCtbuEco\HyXiaoMian2015.Common\bin\Debug\log4net.dll
-D:\MyWeb2005\HyCtbuEco\HyXiaoMian2015.Common\obj\Debug\TMS.Common.csprojResolveAssemblyReference.cache
-D:\MyWeb2005\HyCtbuEco\HyXiaoMian2015.Common\obj\Debug\HyXiaoMian2015.Common.dll
-D:\MyWeb2005\HyCtbuEco\HyXiaoMian2015.Common\obj\Debug\HyXiaoMian2015.Common.pdb

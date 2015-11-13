@@ -7,8 +7,8 @@
     <ProjectGuid>{B44B3C8D-4249-4A30-ACDF-5134B36BAD50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HyCtbuEco.Dim</RootNamespace>
-    <AssemblyName>HyCtbuEco.Dim</AssemblyName>
+    <RootNamespace>HyCtbuEco2015.Dim</RootNamespace>
+    <AssemblyName>HyCtbuEco2015.Dim</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

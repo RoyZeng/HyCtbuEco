@@ -7,8 +7,8 @@
     <ProjectGuid>{BEDCCD33-80FE-4405-9A76-C7335ED9DD01}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HyCtbuEco.Tables</RootNamespace>
-    <AssemblyName>HyCtbuEco.Tables</AssemblyName>
+    <RootNamespace>HyCtbuEco2015.Tables</RootNamespace>
+    <AssemblyName>HyCtbuEco2015.Tables</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
