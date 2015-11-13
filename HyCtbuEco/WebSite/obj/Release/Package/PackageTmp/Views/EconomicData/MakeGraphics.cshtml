@@ -1,0 +1,171 @@
+﻿@{
+    ViewBag.Title = "作图";
+}
+
+
+<style type="text/css">
+    /*.form-control {
+        border:0;
+    }*/
+</style>
+
+
+<div class="heading-buttons">
+
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark">
+            <i class="fa fa-file-image-o  "></i>
+            作图展示:
+
+        </h1>
+    </div>
+    <div class="buttons pull-right">
+
+        <button type="button" class="btn btn-success btn-labeled "
+                data-bind="click: $root.backToHomePage">
+            <span class="btn-label">
+                <i class="fa fa-reply-all "></i>
+            </span>返回
+        </button>
+
+    </div>
+    <div style="clear: both;">
+    </div>
+</div>
+<!--/Operation-->
+
+
+<section class="" id="widget-grid">
+
+    <!-- 作图 -->
+    <div class="row">
+
+        <!-- NEW WIDGET START -->
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+
+            <!-- Widget ID (each widget will need unique ID)-->
+            <div data-widget-sortable="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" id="wid-id-2" class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget">
+
+                <header role="heading">
+                    <span class="widget-icon">
+                        <i class="fa  fa-bar-chart-o  "></i>
+                    </span>
+                    <h2>@ViewBag.LibName</h2>
+                    <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+                </header>
+
+                <!-- widget div-->
+                <div role="content">
+
+                    <!-- widget content -->
+                    <div class="widget-body row">
+                        <div class="col-sm-12">
+                            <div class="jarviswidget" style="min-height: 350px;">
+                                <div class="widget-body row">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <div class="row">
+
+                                                <!--选择指标参数，支持多选-->
+
+                                                <div class="form-group col col-md-6 col-sm-6">
+                                                    <label for="ChosenCate" class="col-md-2 col-sm-2 control-label">指标:</label>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <select id="ChosenIndicator" class="form-control select2-default" multiple="multiple" onchange="gdViewModel.SearchData()">
+                                                            @{
+                                                                var firstId = ViewBag.IndicatorList[0].Id;
+                                                                var firstText = ViewBag.IndicatorList[0].SIndName;
+                                                            }
+                                                            <option value="@firstId" selected="selected">@firstText</option>
+                                                            @for (int i = 1; i < ViewBag.IndicatorList.Count; i++)
+                                                            {
+                                                                var id = ViewBag.IndicatorList[i].Id;
+                                                                var text = ViewBag.IndicatorList[i].SIndName;
+                                                                <option value="@id">@text</option>
+                                                            }
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <!--/end  选择指标参数-->
+
+
+                                                <!--选择地区参数-->
+
+                                                <div class="form-group col col-md-3 col-sm-3">
+                                                    <label for="ChosenArea" class="col-md-4 control-label">地区:</label>
+                                                    <div class="col-md-8">
+                                                        <select id="ChosenArea" class="form-control" onchange="gdViewModel.SearchData()">
+                                                            @for (int i = 0; i < ViewBag.AreaList.Count; i++)
+                                                            {
+                                                                var id = ViewBag.AreaList[i].Id;
+                                                                var text = ViewBag.AreaList[i].SAreaName;
+                                                                <option value="@id">@text</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <!--/end 选择地区参数-->
+
+                                                <!--视图模式-->
+
+                                                <div class="form-group col col-md-3 col-sm-3">
+                                                    <label for="ChosenModel" class="col-md-4 control-label">模式:</label>
+                                                    <div class="col-md-8">
+                                                        <select id="ChosenModel" class="form-control" >
+                                                            <option value="1">折线图</option>
+                                                            <option value="2">柱状图</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <!--/end 视图模式-->
+
+                                            </div>
+
+                                        </fieldset>
+                                    </form>
+                                    <div id="barChart" style="min-height: 408px;margin-top:50px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end widget content -->
+
+                </div>
+                <!-- end widget div -->
+
+            </div>
+            <!-- end widget -->
+
+
+        </article>
+        <!-- WIDGET END -->
+
+    </div>
+
+    <!-- end 作图 -->
+
+</section>
+
+<input  type="hidden"  id="hiddenLibId" value="@ViewBag.LibId"/>
+
+
+
+
+<script>
+    pageSetUp();
+    var pagefunction = function () {
+        loadScript(genRndURL("/Scripts/echarts/build/dist/echarts.js"), function () {
+
+            loadScript(genRndURL("/PageJs/SysUser/MakeGraphics.js"), function () {
+
+                SysMakeGraphicsRunPage();
+            });
+        });
+
+    };
+    pagefunction();
+</script>

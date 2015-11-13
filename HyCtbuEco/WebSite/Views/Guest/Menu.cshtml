@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Menu";
+}
+
+
+<style>
+    nav ul li a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+
+    nav ul li {
+        border: 1px solid #b09b5b;
+        display: block;
+        margin-bottom: -1px;
+        position: relative;
+    }
+</style>
+
+<ul>
+
+    @foreach (var item in ViewBag.LibList)
+    {
+        var url = "/Guest/Home?libId=" + item.Id;
+        <li data-bind="click:$root.UseLib(this)">
+            <a href="@url" title="@item.SLibName"><span class="menu-item-parent">@item.SLibName</span></a>
+        </li>
+    }
+
+</ul>

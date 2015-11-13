@@ -1,0 +1,8 @@
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\bin\Debug\HyCtbuEco.Guest.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\bin\Debug\HyCtbuEco.Guest.pdb
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\bin\Debug\HyXiaoMian2015.Entities.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\bin\Debug\TmsDapper.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\bin\Debug\HyXiaoMian2015.Entities.pdb
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\obj\Debug\HyCtbuEco.Guest.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\obj\Debug\HyCtbuEco.Guest.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Guest\obj\Debug\HyCtbuEco.Guest.pdb

@@ -1,0 +1,529 @@
+﻿@{
+    ViewBag.Title = "长江上游地区经济社会发展数据库";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en-us" id="extr-page">
+<head>
+    <meta charset="utf-8">
+    <title>长江上游地区经济社会发展数据库</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- #CSS Links -->
+    <!-- Basic Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css">
+
+    <!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/smartadmin-production-plugins.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/smartadmin-production.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/smartadmin-skins.min.css">
+
+    <!-- SmartAdmin RTL Support -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/smartadmin-rtl.min.css">
+
+    <!-- We recommend you use "your_style.css" to override SmartAdmin
+             specific styles this will also ensure you retrain your customization with each SmartAdmin update.
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/your_style.css"> -->
+    <!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/demo.min.css">
+
+    <!-- #FAVICONS -->
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+
+
+    <!-- #APP SCREEN / ICONS -->
+    <!-- Specifying a Webpage Icon for Web Clip Ref:  -->
+    <link rel="apple-touch-icon" href="/img/splash/sptouch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/splash/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/splash/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/splash/touch-icon-ipad-retina.png">
+
+    <!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Startup image for web apps -->
+    <link rel="apple-touch-startup-image" href="/img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" href="/img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+    <link rel="apple-touch-startup-image" href="/img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+
+
+
+
+    <style type="text/css">
+        #header {
+            padding: 0px !important;
+        }
+
+        div.headerBak {
+            background-image: url(/img/home/middle.png);
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+
+        #extr-page #header #logo {
+            color: #fff;
+            font-family: Arial,"汉仪行楷简";
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 100px;
+            margin-top: 5px;
+            width: 1300px;
+            letter-spacing: 5px;
+        }
+
+
+        .jarviswidget .widget-body {
+            min-height: 100px;
+            padding-bottom: 13px;
+            position: relative;
+            font-size: 16px;
+            height: 185px;
+            background-color: #f9f2d5;
+        }
+
+        a {
+            text-align: center;
+        }
+
+            a:link {
+                color: #000;
+            }
+
+            a:hover {
+                background-color: #5995a5;
+            }
+
+
+        .table > tbody > tr > td,
+        .table > tbody > tr > th,
+        .table > tfoot > tr > td,
+        .table > tfoot > tr > th,
+        .table > thead > tr > td,
+        .table > thead > tr > th {
+            padding: 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+
+        .smart-form footer {
+            padding: 0 5px 5px;
+        }
+
+
+        footer.footer {
+            background-image: url(/img/home/middle.png);
+        }
+
+        .list-inline > li {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 4px;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="animated fadeInDown">
+
+    <header id="header">
+        <div class="headerBak">
+            <div id="logo-group">
+                <div id="logo">
+
+                    <img src="~/img/home/LOGO.png" alt="长江上游经济研究中心" style="width: 90px; height: 85px;margin-bottom:55px;">
+                    <div style="display:inline-block;">
+                        <span >重庆工商大学长江上游经济研究中心</span><br />
+                        <span style="margin-left:350px;">长江上游地区经济社会发展数据库</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main" role="main">
+
+        <!-- MAIN CONTENT -->
+        <div id="content" class="container">
+
+            <div class="row">
+
+                <div id="wid-id-1" class="jarviswidget jarviswidget-color-yellow    col-xs-12 col-sm-6 col-md-6 col-lg-6" role="widget" style="padding-left:10px;">
+
+                    <header role="heading">
+                        <div class="jarviswidget-ctrls" role="menu"></div>
+                        <h2>经济数据库</h2>
+                        <h2 class="pull-right" style="cursor:pointer;margin-right:10px;">进入 <i class="fa fa-angle-double-right"></i></h2>
+
+                    </header>
+                    <!-- widget div-->
+                    <div role="content" style="height:210px;">
+
+
+                        <!-- widget content -->
+                        <div class="widget-body">
+                            <a href="#" class="col col-sm-3 col-md-3"><img src="/img/home/Database_001.png" style="width:96px;height:96px"><br>宏观经济<br>数据库</a>
+                            <a href="#" class="col col-sm-3 col-md-3"><img src="/img/home/Database_002.png" style="width:96px;height:96px"><br>产业发展<br>数据库</a>
+                            <a href="#" class="col col-sm-3 col-md-3"><img src="/img/home/Database_003.png" style="width:96px;height:96px"><br>人口资源环境<br>数据库</a>
+                            <a href="#" class="col col-sm-3 col-md-3"><img src="/img/home/Database_004.png" style="width:96px;height:96px"><br>移民经济<br>数据库</a>
+                        </div>
+                        <!-- end widget content -->
+
+                    </div>
+                    <!-- end widget div -->
+
+                </div>
+                <div id="wid-id-2" class="jarviswidget jarviswidget-color-yellow    col-xs-12 col-sm-6 col-md-6 col-lg-6" role="widget" style="padding-left:10px;">
+
+                    <header role="heading">
+                        <div class="jarviswidget-ctrls" role="menu"></div>
+                        <h2>2013年前6名地区经济发展情况</h2>
+
+                        <h2 class="pull-right" style="cursor:pointer;margin-right:10px;">更多 <i class="fa fa-angle-double-right"></i></h2>
+                    </header>
+                    <!-- widget div-->
+                    <div role="content" style="height:210px;">
+
+
+                        <!-- widget content -->
+                        <div class="widget-body">
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td>发展与民生指数</td>
+                                        <td>经济发展指数</td>
+                                        <td>民生改善指数</td>
+                                        <td>科技创新指数</td>
+                                        <td>社会发展指数</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>渝中区</td>
+                                        <td>75.35</td>
+                                        <td>82.74</td>
+                                        <td>76.15</td>
+                                        <td>59.57</td>
+                                        <td>76.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>南岸区</td>
+                                        <td>65.90</td>
+                                        <td>57.59</td>
+                                        <td>72.60</td>
+                                        <td>75.29</td>
+                                        <td>74.59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>江北区</td>
+                                        <td>65.58</td>
+                                        <td>64.07</td>
+                                        <td>72.36</td>
+                                        <td>77.15</td>
+                                        <td>77.69</td>
+                                    </tr>
+                                    <tr>
+                                        <td>沙坪坝区</td>
+                                        <td>65.50</td>
+                                        <td>57.69</td>
+                                        <td>71.90</td>
+                                        <td>78.18</td>
+                                        <td>74.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>九龙坡区</td>
+                                        <td>64.59</td>
+                                        <td>63.95</td>
+                                        <td>69.73</td>
+                                        <td>75.56</td>
+                                        <td>75.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>大渡口区</td>
+                                        <td>63.96</td>
+                                        <td>60.83</td>
+                                        <td>78.47</td>
+                                        <td>66.01</td>
+                                        <td>74.38</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- end widget content -->
+
+                    </div>
+                    <!-- end widget div -->
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div id="wid-id-3" class="jarviswidget jarviswidget-color-yellow    col-xs-12 col-sm-6 col-md-6 col-lg-6" role="widget" style="padding-left:10px;">
+
+                    <header role="heading">
+                        <div class="jarviswidget-ctrls" role="menu"></div>
+                        <h2>经济走势跟踪</h2>
+                    </header>
+                    <!-- widget div-->
+                    <div role="content" style="height:360px;">
+
+
+                        <!-- widget content -->
+                        <div class="widget-body">
+
+                            <div class="well">
+
+                                <div class="carousel slide" id="myCarousel-2">
+                                    <ol class="carousel-indicators">
+                                        <li class="" data-slide-to="0" data-target="#myCarousel-2"></li>
+                                        <li class="" data-slide-to="1" data-target="#myCarousel-2"></li>
+                                        <li class="active" data-slide-to="2" data-target="#myCarousel-2"></li>
+                                        <li class="" data-slide-to="3" data-target="#myCarousel-2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <!-- Slide 1 -->
+                                        <div class="item">
+                                            <img alt="" src="/img/home/analyze1.png">
+
+                                        </div>
+                                        <!-- Slide 2 -->
+                                        <div class="item active left">
+                                            <img alt="" src="/img/home/analyze2.png">
+
+                                        </div>
+                                        <!-- Slide 3 -->
+                                        <div class="item next left">
+                                            <img alt="" src="/img/home/analyze3.png">
+
+                                        </div>
+                                        <!-- Slide 4 -->
+                                        <div class="item next left">
+                                            <img alt="" src="/img/home/analyze4.png">
+                                        </div>
+                                    </div>
+                                    <a data-slide="prev" href="#myCarousel-2" class="left carousel-control"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+                                    <a data-slide="next" href="#myCarousel-2" class="right carousel-control"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- end widget content -->
+
+
+
+                    </div>
+                    <!-- end widget div -->
+
+                </div>
+
+
+                <div id="wid-id-4" class="jarviswidget jarviswidget-color-yellow    col-xs-12 col-sm-6 col-md-6 col-lg-6" role="widget" style="padding-left:10px;">
+
+                    <header role="heading">
+                        <div class="jarviswidget-ctrls" role="menu"></div>
+                        <h2>登录</h2>
+                    </header>
+                    <!-- widget div-->
+                    <div role="content" style="height:360px;">
+
+
+                        <!-- widget content -->
+                        <div class="widget-body">
+
+                            <div class="well no-padding">
+                                <form id="login-form" class="smart-form client-form">
+                                    <fieldset>
+                                        <section>
+                                            <label class="label">用户名:</label>
+                                            <label class="input">
+                                                <i class="icon-append fa fa-user"></i>
+                                                <input type="text" id="txt_loginName" name="txt_loginName">
+                                                <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i>请输入用户名</b>
+                                            </label>
+                                        </section>
+
+                                        <section>
+                                            <label class="label">密码:</label>
+                                            <label class="input">
+                                                <i class="icon-append fa fa-lock"></i>
+                                                <input type="password" name="txt_password" id="txt_password">
+                                                <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i>请输入密码</b>
+                                            </label>
+
+                                        </section>
+                                        <section>
+                                            <label class="label">验证码:</label>
+                                            <label class="input">
+                                                <input type="text" placeholder="请输入下方验证码" id="txt_validation" name="txt_validation">
+                                            </label>
+                                            <div class="row-fluid val">
+                                                <img id="valiCode" style="cursor: pointer;" src="/Login/GetGuestValidateCode?ID=1" alt="验证码" title="点我刷新" onclick="ClickRemoveChangeCode()" />
+                                            </div>
+                                        </section>
+                                    </fieldset>
+                                    <footer>
+                                        <button type="submit" class="btn btn-primary" onclick="login();return false;">
+                                            登录
+                                        </button>
+                                    </footer>
+                                </form>
+
+                            </div>
+
+                        </div>
+                        <!-- end widget content -->
+
+                    </div>
+                    <!-- end widget div -->
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer ">
+        <div class="container">
+
+            <div class="row footer-bottom">
+                <ul class="list-inline text-center">
+                    <li>Copyright © 2015 长江上游经济研究中心 建议使用浏览器：IE9.0+、Google Chrome、Mozilla Firefox</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--================================================== -->
+    <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+    <script src="/js/plugin/pace/pace.min.js"></script>
+
+    <script> if (!window.jQuery) { document.write('<script src="/js/libs/jquery-2.1.3.min.js"><\/script>'); } </script>
+
+    <script> if (!window.jQuery.ui) { document.write('<script src="/js/libs/jquery-ui-1.10.3.min.js"><\/script>'); } </script>
+
+    <!-- IMPORTANT: APP CONFIG -->
+    <script src="/js/app.config.js"></script>
+
+    <!-- JS TOUCH : include this plugin for mobile drag / drop touch events -->
+    <script src="/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JQUERY VALIDATE -->
+    <script src="/js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+    <!-- JQUERY MASKED INPUT -->
+    <script src="/js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+    <!--[if IE 8]>
+
+            <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+        <![endif]-->
+    <!-- MAIN APP JS FILE -->
+    <script src="/js/app.js"></script>
+
+    <script type="text/javascript">
+
+        //单击重新改变验证码
+        function ClickRemoveChangeCode() {
+            var code = $("#valiCode").attr("src");
+            $("#valiCode").attr("src", code + '1');
+        }
+        runAllForms();
+
+        $(function () {
+
+
+            //监听键盘Keydown事件
+            $("body").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    login();
+                }
+            });
+            // Validation
+            $("#login-form").validate({
+                // Rules for form validation
+                rules: {
+                    txt_loginName: {
+                        required: true,
+                    },
+                    txt_password: {
+                        required: true,
+                    },
+                    txt_validation: { required: true },
+                },
+
+                // Messages for form validation
+                messages: {
+                    txt_loginName: {
+                        required: '用户名不能为空',
+                    },
+                    txt_password: {
+                        required: '密码不能为空'
+                    },
+                    txt_validation: { required: "验证码不能为空" },
+                },
+
+                // Do not change code below
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element.parent());
+                }
+            });
+        });
+        //登录验证
+        function login() {
+            if ($("#login-form").valid()) {
+                var loginName = $("#txt_loginName").val();
+                var password = $("#txt_password").val();
+                var validcode = $("#txt_validation").val();  //验证码
+                $.ajax({
+                    url: "/WebApi/LoginValidate/GuestUser",
+                    cache: false,
+                    type: 'POST',
+                    data: { UserName: loginName, PassWord: password, ValidCode: validcode },
+                    success: function (result) {
+                        switch (result) {
+                            case 0:
+                                alert("错误的用户名和密码!");
+                                ClickRemoveChangeCode();
+                                break;
+                            case 1:
+                                window.location.href = "/Guest/Index#/Guest/Home?libId=1";
+                                break;
+                            case -2:
+                                alert("错误的验证码！");
+                                ClickRemoveChangeCode();
+                                $("#txt_validation").val('');
+                                break;
+                        }
+                    },
+
+
+                })
+
+            }
+
+        }//end login
+    </script>
+
+</body>
+</html>

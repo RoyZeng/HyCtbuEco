@@ -1,0 +1,12 @@
+D:\MyWeb2015\HyXiaoMian2015\HyXiaoMian2015.Entities\bin\Release\HyXiaoMian2015.Entities.dll
+D:\MyWeb2015\HyXiaoMian2015\HyXiaoMian2015.Entities\bin\Release\HyXiaoMian2015.Entities.pdb
+D:\MyWeb2015\HyXiaoMian2015\HyXiaoMian2015.Entities\bin\Release\TmsDapper.dll
+D:\MyWeb2015\HyXiaoMian2015\HyXiaoMian2015.Entities\obj\Release\HyXiaoMian2015.Entities.dll
+D:\MyWeb2015\HyXiaoMian2015\HyXiaoMian2015.Entities\obj\Release\HyXiaoMian2015.Entities.pdb
+D:\MyWeb2015\HyXiaoMian2015\HyXiaoMian2015.Entities\obj\Release\HyXiaoMian2015.Entities.csprojResolveAssemblyReference.cache
+D:\MyWeb2005\HyXiaoMian2015\HyXiaoMian2015.Entities\bin\Release\HyXiaoMian2015.Entities.dll
+D:\MyWeb2005\HyXiaoMian2015\HyXiaoMian2015.Entities\bin\Release\HyXiaoMian2015.Entities.pdb
+D:\MyWeb2005\HyXiaoMian2015\HyXiaoMian2015.Entities\bin\Release\TmsDapper.dll
+D:\MyWeb2005\HyXiaoMian2015\HyXiaoMian2015.Entities\obj\Release\HyXiaoMian2015.Entities.csprojResolveAssemblyReference.cache
+D:\MyWeb2005\HyXiaoMian2015\HyXiaoMian2015.Entities\obj\Release\HyXiaoMian2015.Entities.dll
+D:\MyWeb2005\HyXiaoMian2015\HyXiaoMian2015.Entities\obj\Release\HyXiaoMian2015.Entities.pdb

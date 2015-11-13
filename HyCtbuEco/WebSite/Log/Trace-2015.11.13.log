@@ -1,0 +1,83 @@
+2015-11-13 10:01:39,786 WARN  : app started.
+2015-11-13 10:27:55,629 WARN  : app stopped.
+2015-11-13 10:28:00,378 WARN  : app started.
+2015-11-13 10:29:38,542 ERROR : 
+.客户信息：
+	Ip:::1
+	浏览器:Firefox
+	浏览器版本:42
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:44653/Login/Guest
+	错误信息：在控制器“HyCtbuEco2015.Controllers.LoginController”上未找到公共操作方法“Guest”。
+	错误源：System.Web.Mvc
+	异常方法：Void HandleUnknownAction(System.String)
+	堆栈信息：   在 System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
+   在 System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------------------
+2015-11-13 10:32:05,564 ERROR : 
+.客户信息：
+	Ip:::1
+	浏览器:Firefox
+	浏览器版本:42
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:44653/Login/Guest
+	错误信息：在控制器“HyCtbuEco2015.Controllers.LoginController”上未找到公共操作方法“Guest”。
+	错误源：System.Web.Mvc
+	异常方法：Void HandleUnknownAction(System.String)
+	堆栈信息：   在 System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
+   在 System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------------------
+2015-11-13 10:34:25,954 WARN  : app stopped.
+2015-11-13 10:34:40,392 WARN  : app started.
+2015-11-13 10:38:35,383 WARN  : app stopped.
+2015-11-13 10:40:11,405 WARN  : app started.
+2015-11-13 10:42:04,059 WARN  : app stopped.
+2015-11-13 10:44:24,540 WARN  : app started.
+2015-11-13 10:50:59,758 WARN  : app stopped.
+2015-11-13 10:51:05,709 WARN  : app started.
+2015-11-13 10:57:36,736 WARN  : app stopped.
+2015-11-13 10:57:41,431 WARN  : app started.
+2015-11-13 11:04:25,173 WARN  : app stopped.
+2015-11-13 11:04:30,019 WARN  : app started.
+2015-11-13 11:07:10,706 WARN  : app stopped.
+2015-11-13 11:07:17,651 WARN  : app started.
+2015-11-13 11:07:30,444 WARN  : app started.
+2015-11-13 11:33:13,550 WARN  : app stopped.
+2015-11-13 12:30:12,061 WARN  : app started.
+2015-11-13 12:32:27,253 WARN  : app stopped.
+2015-11-13 12:32:34,779 WARN  : app started.
+2015-11-13 13:48:26,371 WARN  : app stopped.
+2015-11-13 13:48:31,929 WARN  : app started.
+2015-11-13 13:52:35,180 WARN  : app stopped.
+2015-11-13 14:08:06,249 WARN  : app started.
+2015-11-13 14:08:53,020 WARN  : app started.

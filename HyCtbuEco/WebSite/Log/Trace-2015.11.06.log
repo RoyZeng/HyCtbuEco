@@ -1,0 +1,43 @@
+2015-11-06 10:13:12,520 WARN  : app started.
+2015-11-06 10:50:17,919 WARN  : app stopped.
+2015-11-06 10:50:23,327 WARN  : app started.
+2015-11-06 10:51:37,450 WARN  : app stopped.
+2015-11-06 10:51:42,112 WARN  : app started.
+2015-11-06 10:59:09,422 WARN  : app stopped.
+2015-11-06 10:59:13,983 WARN  : app started.
+2015-11-06 11:18:36,281 WARN  : app stopped.
+2015-11-06 11:18:41,823 WARN  : app started.
+2015-11-06 13:57:43,024 WARN  : app stopped.
+2015-11-06 21:13:19,378 WARN  : app started.
+2015-11-06 21:24:46,476 WARN  : app started.
+2015-11-06 21:42:43,933 WARN  : app started.
+2015-11-06 21:50:48,376 ERROR : 
+.客户信息：
+	Ip:::1
+	浏览器:Chrome
+	浏览器版本:45
+	操作系统:WinNT
+.错误信息：
+	页面：http://localhost:44653/、
+	错误信息：未找到路径“/、”的控制器或该控制器未实现 IController。
+	错误源：System.Web.Mvc
+	异常方法：System.Web.Mvc.IController GetControllerInstance(System.Web.Routing.RequestContext, System.Type)
+	堆栈信息：   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------------------
+2015-11-06 21:56:48,294 WARN  : app stopped.
+2015-11-06 21:57:27,036 WARN  : app started.
+2015-11-06 22:36:06,066 WARN  : app stopped.
+2015-11-06 22:36:34,541 WARN  : app started.
+2015-11-06 22:58:37,832 WARN  : app stopped.
+2015-11-06 22:58:41,668 WARN  : app started.
+2015-11-06 23:19:54,114 WARN  : app stopped.
+2015-11-06 23:19:59,425 WARN  : app started.
+2015-11-06 23:22:42,541 WARN  : app stopped.
+2015-11-06 23:25:08,254 WARN  : app started.

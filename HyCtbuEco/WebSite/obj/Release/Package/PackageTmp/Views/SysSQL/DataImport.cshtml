@@ -1,0 +1,291 @@
+﻿@{
+    Layout = null;
+}
+
+<style>
+    .jarviswidget > div {
+        border: 0;
+    }
+
+    .tab-pane {
+        margin: 30px 20px;
+        padding: 20px;
+        border: 1px solid;
+    }
+
+    <!-- 消除部分div的show的不完整-- > #login {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        overflow: visible;
+    }
+
+    .form-actions {
+        margin: 10px 0 0!important;
+        background-color: white;
+    }
+</style>
+
+
+<!--通用数据导入向导-->
+
+<div id="content" style="opacity: 1;">
+
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark"><i class="fa fa-pencil-square-o fa-fw "></i><span>通用数据导入向导</span></h1>
+    </div>
+
+
+    <div class="row">
+
+        <!-- NEW WIDGET START -->
+        <article class="col-sm-12 col-md-12 col-lg-12">
+
+            <!-- Widget ID (each widget will need unique ID)-->
+            <div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
+
+
+                <!-- widget div-->
+                <div>
+
+                    <!-- widget edit box -->
+                    <div class="jarviswidget-editbox">
+                        <!-- This area used as dropdown edit box -->
+
+                    </div>
+                    <!-- end widget edit box -->
+
+                    <!-- widget content -->
+                    <div class="widget-body">
+
+                        <div class="row">
+
+                            <div id="bootstrap-wizard-1" class="col-sm-12">
+                                <div class="form-bootstrapWizard">
+                                    <ul class="bootstrapWizard form-wizard">
+                                        <li class="active" data-target="#step1">
+                                            <a href="#tab1" data-toggle="tab">
+                                                <span class="step">1</span>
+                                                <span class="title">第一步</span> </a>
+                                        </li>
+                                        <li data-target="#step2">
+                                            <a href="#tab2" data-toggle="tab">
+                                                <span class="step">2</span> <span class="title">第二步</span> </a>
+                                        </li>
+                                        <li data-target="#step3">
+                                            <a href="#tab3" data-toggle="tab">
+                                                <span class="step">3</span> <span class="title">完成，并提交</span> </a>
+                                        </li>
+                                       
+
+
+
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <!--试题导入第一步-->
+                                    <div class="tab-pane active" id="tab1">
+                                        <div class="panel panel-success">
+                                            <div class="panel-heading">通用Excel导入工具</div>
+                                            <div class="panel-body">
+
+                                                <div class="form-group">
+                                                    <label for="select-1" class=" control-label font-md" style="width: 17%; margin-top: 5px; float: left">请选择目标主表：</label>
+                                                    <div class="" style="width: 75%; float: left">
+
+
+
+                                                        <label class="select">
+                                                            @Html.DropDownList("select-1", new SelectList(ViewBag.tableList, "tableTrueName", "tableChineseName"))
+                                                            <i></i>
+                                                        </label>
+
+
+
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="panel-heading">示例说明</div>
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: auto">名称</th>
+                                                        <th style="width: auto">下载模板</th>
+                                                        <th style="width: auto">目标表</th>
+                                                        <th style="width: auto">重要说明</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody onclick="">
+                                                    <tr>
+                                                        <td>品牌表</td>
+                                                        <td><a href="/Upload/ModelTableImportFile/班级管理.xls" class="txt-color-blue">下载模板</a> </td>
+                                                        <td>tb_Brand</td>
+                                                        <td>注意班级管理里面的所有项都是必填项,不能有错，导入后请检查是否有多否出现相同的班级的情况,如果有请删除,需要重新导入的请先编辑</td>
+                                                    </tr>
+
+
+
+
+
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div style="height: 100px"></div>
+
+
+                                    </div>
+
+
+
+                                    <!--试题导入第二步-->
+                                    <div class="tab-pane" id="tab2">
+                                        <div class="panel panel-success">
+                                            <div class="panel-heading">通用Excel导入工具</div>
+                                            <div class="smart-form" style="height: 300px">
+                                                <p class="font-md">请上传指定格式的Excel文件,文件的第一行是字段说明，第二行是字段名，从第三行开始是真正的数据</p>
+
+                                                <label class="input input-file font-md " style="margin-top: 7px; float: left; width: 10%">文件路径：</label>
+                                                <label class="input  state-success  pull-left" style="margin-top: 5px; width: 75%; float: left">
+                                                    <input type="text" id="fileID"></label>
+                                                <label id="bootstrapped-fine-uploader" style="width: 120px; float: left"></label>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <!--试题导入第三步-->
+                                    <div class="tab-pane" id="tab3">
+                                        <div class="panel panel-success">
+                                            <div class="panel-heading">通用Excel导入工具</div>
+
+                                            <div class="panel-body  ">
+                                                <div class="panel panel-success">
+                                                    
+                                                    <div class="smart-form">
+                                                        <table class="table table-bordered table-striped  table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 2%"></th>
+                                                                    <th>源字段说明</th>
+                                                                    <th>源字段名</th>
+                                                                    <th>目标字段名</th>
+                                                                    <th>目标字段类型</th>
+                                                                    <th>目标字段长度</th>
+                                                                    <th>第三方表名</th>
+                                                                    <th>第三方字段名</th>
+                                                                    <th>第三方字段类型</th>
+                                                                    <th>第三方字段长度</th>
+                                                                </tr>
+
+                                                            </thead>
+                                                            <tbody data-bind="foreach:SetData">
+                                                                <tr>
+                                                                    <td data-bind="text:GenID"></td>
+                                                                    <td data-bind="text:SourceFieldMem"></td>
+                                                                    <td data-bind="text:SoureFieldName"></td>
+                                                                    <td data-bind="text:TargetFieldName"></td>
+                                                                    <td data-bind="text:TargetFieldType"></td>
+                                                                    <td data-bind="text:TargetFieldLength"></td>
+                                                                    <td data-bind="text:SecTableName"></td>
+                                                                    <td data-bind="text:SecFieldName"></td>
+                                                                    <td data-bind="text:SecFieldType"></td>
+                                                                    <td data-bind="text:SecFieldLength"></td>
+
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-left: 1.5%">
+                                                <label>
+                                                    <input name="IsClearMainTable" id="IsClearMainTableId" type="checkbox" value="1" /></label><label style="margin-left: auto">清空原有主表</label><br />
+                                                <label>
+                                                    <input name="IsAddUnExistData" type="checkbox" value="1" /></label>
+                                                <label style="margin-left: auto">向附表中追加不存在的数据</label>
+
+                                                <div id="ShowDownLoadID" class="buttons pull-right" onclick=""></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                 
+
+
+                                    <!--按钮组-->
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul class="pager wizard no-margin">
+
+                                                    <li class="previous disabled">
+                                                        <a href="javascript:void(0);" class="btn btn-lg btn-default">上一步</a>
+                                                    </li>
+
+
+
+                                                    <li class="next" style="float: right" id="nextid">
+                                                        <!--test-->
+                                                        <a href="javascript:void(0);" class="btn btn-lg txt-color-darken">下一步 </a>
+                                                    </li>
+                                                    <li id="testid" style="float: right"><a href="javascript:void(0);" id="hrefID" data-bind="click:$root.SubmitData" class="btn btn-lg txt-color-darken  ">提交数据 </a></li>
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end widget content -->
+
+                </div>
+                <!-- end widget div -->
+
+            </div>
+            <!-- end widget -->
+
+        </article>
+        <!-- WIDGET END -->
+
+
+    </div>
+</div>
+<link href="~/css/summernote.css" rel="stylesheet" />
+<script type="text/javascript">
+    window.UEDITOR_HOME_URL = "/ueditor/";//ueditor root 
+    var pagefunction = function () {
+        loadScript(genRndURL("/js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"), function () {
+            loadScript(genRndURL("/Scripts/Jcrop/jquery.fineuploader-3.1.min.js"), function () {
+
+                loadScript("/ueditor/ueditor.all.js", function () {
+
+                    loadScript(genRndURL("/PageJs/SysUser/CommonDataImport.js"), function () {
+                        CommonDataImportRunPage();
+                    });
+
+                });
+
+            });
+        });
+    };
+    pagefunction();
+
+
+
+
+</script>

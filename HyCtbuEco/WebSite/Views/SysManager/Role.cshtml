@@ -1,0 +1,164 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "角色管理";
+}
+
+
+<!--Operation-->
+<div class="heading-buttons">
+
+
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark">
+            <i class="fa  fa-pencil "></i>
+            角色管理
+        </h1>
+    </div>
+
+    <div style="clear: both;">
+    </div>
+</div>
+<!--/Operation-->
+
+
+
+<div class="row">
+
+    <div class="widget-body col-sm-4" style="margin-bottom: 5px; margin-top: 5px;">
+        <div class="jarviswidget" style="min-height:350px;">
+
+
+            <header>
+                <h2><strong>结点信息</strong> </h2>
+                <div class="widget-toolbar">
+                    <button type="button" class="btn btn-success  " id="btnSysRoleAdd"
+                            data-bind="click: $root.AddNewNode">
+                      
+                            <i class="glyphicon glyphicon-plus"></i>
+                       新建角色
+                    </button>
+                    <button type="button" class="btn btn-danger " id="btnSysRoleDel"
+                            data-bind="click: $root.DelNode">
+                       
+                            <i class="glyphicon glyphicon-remove"></i>
+                       删除角色
+                    </button>
+                </div>	
+            </header>
+            <div class="widget-body row" style="min-height:408px;">
+
+                <!--SysRole tree-->
+                <ul id="SysRoleTree" class="ztree"></ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- end col-sm-61 -->
+    <!--/SysRole tree-->
+    <!--SysRole  information-->
+    <div class="col-sm-8" style="margin-bottom: 5px; margin-top: 5px;">
+        <input type="hidden" id="hidId" />
+        <div class="jarviswidget" style="min-height:350px;">
+
+
+            <header>
+                <h2><strong>详细信息</strong> </h2>
+
+            </header>
+            <div class="widget-body row">
+                <form class="form-horizontal" id="frmSysRole" data-bind="with: NodeValue" style="min-height:350px;">
+
+                    <fieldset>
+
+
+
+                        <input type='hidden' id='txtbId' name='txtbId' placeholder='' class='form-control' data-bind='value:Id' />
+
+                        <div class='form-group'>
+                            <label class='col-md-2 control-label' style='margin-bottom: 3px;'>角色名称:</label><div class='col-md-10'>
+                                <input type='text' id='txtbSRoleName' name='txtbSRoleName' placeholder='角色名称，必填' class='form-control' data-bind='value:SRoleName' />
+                            </div>
+                        </div>
+                        <div class='form-group'>
+                            <label class='col-md-2 control-label' style='margin-bottom: 3px;'>角色描述:</label><div class='col-md-10'>
+                                <textarea id='txtbSDis' name='txtbSDis' placeholder='' class='form-control' data-bind='value:SDis' />
+                            </div>
+                        </div>
+
+                        <div class='form-group'>
+                            <label class='col-md-2 control-label' style='margin-bottom: 3px;'>拥有权限:</label><div class='col-md-7'>
+                                <input type='text' id='txtbSPower' name='txtbSPower' placeholder='' class='form-control' data-bind='value:SPower' />
+                            </div>
+                            <a data-target="#myModal" role="button" class="btn btn-default" data-toggle="modal" data-bind="click:$root.showPower"><i class="fa fa-cog"></i>选择权限</a>
+                        </div>
+
+
+                        <input type='hidden' id='txtbILevel' name='txtbILevel' placeholder='' class='form-control' data-bind='value:ILevel' />
+
+                        <input type='hidden' id='txtbIParentId' name='txtbIParentId' placeholder='' class='form-control' data-bind='value:IParentId' />
+
+
+                    </fieldset>
+                </form>
+
+                <div class="widget-footer">
+
+                    <button type="button" id="btnSysRoleUpdate" class="btn btn-sm btn-primary" data-bind="click: $root.updateNode">
+
+                        <i class="fa fa-save"></i>
+                        保存
+                    </button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!-- end row -->
+<!--/SysRole information-->
+<!--Power tree-->
+
+
+<!-- Dynamic Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="myModalLabel"><strong>角色权限设置</strong></h4>
+            </div>
+            <div class="modal-body" style="min-height:350px;">
+
+               
+               
+                    <ul id="Powertree" class="ztree"></ul>
+               
+               
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+                <button class="btn btn-primary" id="confirm_power">授权</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /.modal --> 
+
+
+<script>
+    pageSetUp();
+    var pagefunction = function () {
+
+        loadScript(genRndURL("/PageJs/SysUser/Role.js"), function () {
+            SysRoleRunPage();
+        });
+
+
+    };
+    pagefunction();
+</script>

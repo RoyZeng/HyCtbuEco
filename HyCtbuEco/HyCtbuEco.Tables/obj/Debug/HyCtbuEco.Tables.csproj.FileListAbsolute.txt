@@ -1,0 +1,8 @@
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyCtbuEco.Tables.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyCtbuEco.Tables.pdb
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyXiaoMian2015.Entities.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\TmsDapper.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\bin\Debug\HyXiaoMian2015.Entities.pdb
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco.Tables.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco.Tables.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco.Tables\obj\Debug\HyCtbuEco.Tables.pdb

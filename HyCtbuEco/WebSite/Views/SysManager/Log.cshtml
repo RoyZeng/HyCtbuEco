@@ -1,0 +1,261 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+
+
+
+
+
+
+<!--begin grid code-->
+
+<!--Operation-->
+<div class="heading-buttons">
+
+
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark">
+            <i class="fa fa-calendar  "></i>
+            系统日志管理
+
+        </h1>
+    </div>
+
+    <div style="clear: both;">
+    </div>
+</div>
+<!--/Operation-->
+
+<section id="widget-grid" class="">
+
+    <!-- Widget ID (each widget will need unique ID)-->
+    <div class="jarviswidget jarviswidget-color-red" id="wid-id-Usrs" data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-deletebutton="false" data-widget-custombutton=" false"
+        data-widget-sortable="false">
+
+        <header>
+
+            <span class="widget-icon"><i class="fa fa-table"></i></span>
+            <h2>系统日志信息列表</h2>
+
+        </header>
+
+        <!-- widget div-->
+
+        <div>
+
+
+            <!-- widget content -->
+            <div class="widget-body no-padding">
+                <div class="widget-body-toolbar">
+                    <div class="btn-group">
+                        <form id="formSearch" class="form-inline" role="form">
+
+
+
+                            <div class='form-group'>
+                                <label class='control-label' for='txtbID'>ID：</label>
+                                <input id='txtbSrID' name='txtbSrID' type='text' placeholder='ID' class='form-control' style='width: 120px;' />
+                            </div>
+                            <div class='form-group'>
+                                <label class='control-label' for='txtbILogType'>类型：</label>
+                                <input id='txtbSrILogType' name='txtbSrILogType' type='text' placeholder='类型' class='form-control' style='width: 120px;' />
+                            </div>
+                            <div class='form-group'>
+                                <label class='control-label' for='txtbSMessage'>消息：</label>
+                                <input id='txtbSrSMessage' name='txtbSrSMessage' type='text' placeholder='消息' class='form-control' style='width: 120px;' />
+                            </div>
+                            <div class='form-group'>
+                                <label class='control-label' for='txtbIUserID'>用户ID：</label>
+                                <input id='txtbSrIUserID' name='txtbSrIUserID' type='text' placeholder='用户ID' class='form-control' style='width: 120px;' />
+                            </div>
+
+
+                            <button class="btn   btn-primary" data-bind="click: $root.search">
+                                <i class="fa fa-search"></i>筛选
+                            </button>
+
+
+                        </form>
+                    </div>
+                </div>
+                <!--end of Toolbar -->
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th style="width: 1%">
+                                    <input type="checkbox" value="0" id="headcheck" />
+                                </th>
+                                <!-- ko foreach: headers -->
+                                <th class="center ">
+                                    <a href="#" data-bind="text: displayText@*, click: $root.sort*@" style="color: black"></a>
+                                    <i class="icon-circle-arrow-up" data-bind="    visible: value == $root.orderBy() && $root.isAsc()"></i>
+                                    <i class="icon-circle-arrow-down" data-bind="    visible: value == $root.orderBy() && !$root.isAsc()"></i>
+                                </th>
+
+                                <!-- /ko -->
+                                <th class="center" style="width: 60px">操作</th>
+                            </tr>
+                        </thead>
+                        <!--table body(Provider list)-->
+                        <tbody data-bind="foreach: recordSet">
+                            <tr class="selectable" onclick="">
+                                <td class="center">
+                                    <input type="checkbox" name="userSelector" data-bind="value: Id" />
+                                    <input type="hidden" data-bind="value: Id, attr: { id: Id }" />
+                                </td>
+
+                                <td class='center'><strong data-bind='text: Id'></strong></td>
+                                <td class='center'><strong data-bind='text: ILogType'></strong></td>
+                                <td class='center'><strong data-bind='text: SMessage'></strong></td>
+                                <td class='center'><strong data-bind='text: IUserID'></strong></td>
+                                <td class='center'><strong data-bind='text: DWriteTime'></strong></td>
+
+
+                                <td class="center">
+                                    <a href="#" class="btn btn-sm btn-success" data-bind="click: $root.showUpdateModal">
+                                        <i><span class="fa fa-pencil"></span></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <!--/table body( Provider list)-->
+                    </table>
+
+                </div>
+                <!--end of table grid -->
+
+                <div class="widget-footer">
+
+                    <!-- 分页 -->
+                    <ul class="pagination pagination-sm">
+                        <li>
+                            <a data-bind="click: firstPage"><i class="fa fa-fast-backward "></i></a>
+                        </li>
+                        <li class="paginate_button ">
+                            <a data-bind="click: prevPage"><i class="fa  fa-backward  "></i></a>
+                        </li>
+                        <li class="paginate_button ">
+                            <a style="padding: 2px 1px;">
+                                <input id="toPageaaa" type="text" data-bind="value: pageIndex, event: { change: $root.changePageIndex }" style="width: 25px;" /></a>
+
+                        </li>
+                        <li class="paginate_button ">
+                            <a>/共<span data-bind="html: totalPages"></span>页
+                            </a>
+                        </li>
+                        <li class="paginate_button ">
+                            <a data-bind="click: nextPage"><i class="fa fa-forward "></i></a>
+                        </li>
+                        <li class="paginate_button ">
+                            <a data-bind="click: lastPage"><i class="fa fa-fast-forward "></i></a>
+                        </li>
+                    </ul>
+
+                    <div class="dt-top-row total pull-left " style="margin: 18px;">
+                        当前记录共：<span data-bind="html: totalCount"></span>条
+                    </div>
+                    <!--end 分页-->
+                </div>
+
+                <!--end of table pager -->
+
+
+
+            </div>
+            <!-- end widget content -->
+
+        </div>
+        <!-- end widget div -->
+
+    </div>
+    <!-- end widget -->
+
+
+</section>
+
+
+<!--SysLog详细对话框-->
+<div id="SysLogMessageModal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="SysLogMessageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <h4>系统日志信息详细
+                </h4>
+            </div>
+
+            <div class="modal-body">
+                <input type='hidden' id='txtbID' name='txtbID' />
+                <form class="smart-admin" id="formSysLog" data-bind="with: NodeValue">
+
+
+                    <fieldset>
+
+                        <div class='form-group'>
+                            <label>日志类型:</label><input type='text' id='txtbILogType' name='txtbILogType' placeholder='' class='form-control' data-bind='value:ILogType' />
+                        </div>
+                        <div class='form-group'>
+                            <label>标题:</label><input type='text' id='txtbSMessage' name='txtbSMessage' placeholder='' class='form-control' data-bind='value:SMessage' ></input>
+                        </div>
+                        <div class='form-group'>
+                            <label>用户ID:</label><input type='text' id='txtbIUserID' name='txtbIUserID' placeholder='' class='form-control' data-bind='value:IUserID' />
+                        </div>
+                        <div class='form-group'>
+                            <label>写入时间:</label><input type='text' id='txtbDWriteTime' name='txtbDWriteTime' placeholder='' class='form-control' data-bind='value:DWriteTime' />
+                        </div>
+                        <div class='form-group'>
+                            <label>备注:</label><textarea  id='txtbSMemo' name='txtbSMemo' placeholder='' class='form-control' data-bind='value:SMemo' rows='3'>
+
+                                              </textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">
+                    取消</button>
+                
+            </div>
+        </div>
+        <!--end div content-->
+
+
+    </div>
+    <!--end of dailog  -->
+</div>
+<!--/详细SysLog对话框-->
+
+
+
+
+<script type="text/javascript">
+
+    pageSetUp();
+    var pagefunction = function () {
+        //loadScript(genRndURL("/PageJs/SysLog.js"), function () {
+        loadScript("/PageJs/SysUser/SysLog.js", function () {
+            SysLogRunPage();
+        });
+    };
+    pagefunction();
+
+
+</script>
+
+
+
+
+
+
+<!--/end grid code-->

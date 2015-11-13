@@ -1,0 +1,11 @@
+E:\项目\经济数据分析\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyCtbuEco.Server.csprojResolveAssemblyReference.cache
+E:\项目\经济数据分析\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyXiaoMian2015.Server.dll
+E:\项目\经济数据分析\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyXiaoMian2015.Server.pdb
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyXiaoMian2015.Server.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyXiaoMian2015.Server.pdb
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyXiaoMian2015.Entities.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\TmsDapper.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\bin\Debug\HyXiaoMian2015.Entities.pdb
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyCtbuEco.Server.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyXiaoMian2015.Server.dll
+C:\Users\Joe\Desktop\HyCtbuEco\HyCtbuEco2015.Server\obj\Debug\HyXiaoMian2015.Server.pdb

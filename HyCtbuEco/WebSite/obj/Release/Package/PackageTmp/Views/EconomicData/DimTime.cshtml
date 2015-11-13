@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "时间管理";
+}
+
+<!--树-->
+<!--Operation-->
+<div class="heading-buttons">
+
+
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark">
+            <i class="fa  fa-calendar fa-fw "></i>
+            时间管理
+        </h1>
+    </div>
+
+    <div style="clear: both;">
+        
+    </div>
+</div>
+<!--/Operation-->
+
+
+
+<div class="row">
+
+    <div class="widget-body col-sm-4" style="margin-bottom: 5px; margin-top: 5px;">
+        <div class="jarviswidget" style="min-height: 350px;">
+
+
+            <header>
+                <h2><strong>@Html.DropDownList("ILibID", new SelectList(ViewBag.lib, "Id", "SLibName"), new {  })</strong> </h2>
+                <div class="widget-toolbar">
+                    <button type="button" class="btn btn-success  " id="btnSysRoleAdd"
+                        data-bind="click: $root.AddNewNode">
+
+                        <i class="glyphicon glyphicon-plus"></i>
+                        新建结点
+                    </button>
+                    <button type="button" class="btn btn-danger " id="btnSysRoleDel"
+                        data-bind="click: $root.DelNode">
+
+                        <i class="glyphicon glyphicon-remove"></i>
+                        删除结点
+                    </button>
+                </div>
+            </header>
+            <div class="widget-body row" style="min-height: 408px;">
+
+                <!--DimTime tree-->
+                <ul id="DimTimeTree" class="ztree"></ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- end col-sm-61 -->
+    <!--/SysRole tree-->
+    <!--SysRole  information-->
+    <div class="col-sm-8" style="margin-bottom: 5px; margin-top: 5px;">
+        <input type="hidden" id="hidId" />
+        <div class="jarviswidget" style="min-height: 350px;">
+
+
+            <header>
+                <h2><strong>详细信息</strong> </h2>
+
+            </header>
+            <div class="widget-body row">
+                <form class="smart-form" id="frmDimTime" data-bind="with: NodeValue" style="min-height: 350px;">
+
+                    <fieldset style="padding-top: 5px;">
+                        <section style="display: none">
+                            <div class='form-group'>
+                                <label>:</label><input type='text' id='txtbId' name='txtbId' placeholder='' class='form-control' data-bind='value:Id' /><span style='color: Red'>*</span>     </div>
+                        </section>
+                        <section>
+                            <div class='form-group'>
+                                <label>名称:</label><input type='text' id='txtbSName' name='txtbSName' placeholder='名称' class='form-control' data-bind='value:SName' />
+                            </div>
+                        </section>
+                        <section>
+                            <div class='form-group'>
+                                <label>代码，例如：2009:</label><input type='text' id='txtbSTimeCode' name='txtbSTimeCode' placeholder='代码，例如：2009' class='form-control' data-bind='value:STimeCode' />
+                            </div>
+                        </section>
+                        <section style="display: none">
+                            <div class='form-group'>
+                                <label>父结点:</label><input type='text' id='txtbIParentID' name='txtbIParentID' placeholder='父结点' class='form-control' data-bind='value:IParentID' />
+                            </div>
+                        </section>
+                        <section style="display: none">
+                            <div class='form-group'>
+                                <label>:</label><input type='text' id='txtbILevel' name='txtbILevel' placeholder='' class='form-control' data-bind='value:ILevel' />
+                            </div>
+                        </section>
+                        <section>
+                            <div class='form-group'>
+                                <label>备注:</label><textarea id='txtbSMemo' name='txtbSMemo' placeholder='备注' class='form-control' data-bind='value:SMemo'></textarea>
+                            </div>
+                        </section>
+
+                    </fieldset>
+                </form>
+
+                <div class="widget-footer">
+
+                    <button type="button" id="btnDimTimeUpdate" class="btn btn-sm btn-primary" data-bind="click: $root.updateNode">
+
+                        <i class="fa fa-save"></i>
+                        保存
+                    </button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!-- end row -->
+<!--/DimTime information-->
+<!--DimTime tree-->
+
+
+
+
+<script type="text/javascript">
+
+
+    pageSetUp();
+    var pagefunction = function () {
+
+        loadScript(genRndURL("/PageJs/SysUser/DimTime.js"), function () {
+            DimTimeRunPage();
+        });
+
+
+    };
+    pagefunction();
+</script>

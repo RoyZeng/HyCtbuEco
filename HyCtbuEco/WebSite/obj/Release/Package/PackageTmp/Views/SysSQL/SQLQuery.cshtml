@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "SQLQuery";
+}
+
+
+<div class="panel panel-success">
+    <div class="panel-heading">通用查询及导出</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="select-1" class=" control-label font-md" style="width: 90px; float: left; margin-top: 1.5px">查询名称：</label>
+
+            <label class="select">
+                        @Html.DropDownList("selQuerys", new SelectList(ViewBag.sqlList, "Id", "SSqlName"))
+                        <i></i>
+                    </label> 
+
+            <button type="button" class="btn btn-success btn-labeled  " data-bind="click:$root.QueryData">
+
+                <span class="btn-label"><i class="fa fa-eye"></i>
+                </span>查询数据</button>
+            <button type="button" class="btn btn-success btn-labeled " data-bind="click:$root.PostDataToExcel">
+
+                <span class="btn-label"><i class="fa fa-arrow-circle-right"></i>
+                </span>导出Excel</button>
+        </div>
+        <div class="form-group" style="display: none" id="ContentId">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr id="tableHeader"></tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    pageSetUp();
+    var pagefunction = function () {
+        loadScript(genRndURL("/PageJs/SysUser/CommonDataExport.js"), function () {
+            CommonDataExportRunPage();
+        });
+    };
+    pagefunction();
+</script>
